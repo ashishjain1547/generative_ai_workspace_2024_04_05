@@ -1,0 +1,7 @@
+[
+    {
+        "NLQ": "Show all tables.",
+        "Explanation": "This query will show all the tables in the database.",
+        "SQL": "select name from FROM sqlite_master WHERE type='table';"
+    }
+]

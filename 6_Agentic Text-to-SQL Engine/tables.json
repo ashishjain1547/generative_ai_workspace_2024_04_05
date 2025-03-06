@@ -1,0 +1,263 @@
+{
+    "AB_CUSTOMERS": {
+        "table_name": "AB_CUSTOMERS",
+        "columns": [
+            {
+                "name": "CUSTOMERID",
+                "data_type": "NUMBER",
+                "primary_key": true,
+                "nullable": false,
+                "description": "A unique numeric identifier for each customer. This value serves as the primary key and uniquely identifies each record in the table. It must be non-null."
+            },
+            {
+                "name": "CUSTOMERNAME",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The full name of the customer or company. This field is used for display, reporting, and identifying the business entity. It typically contains the legal or trade name."
+            },
+            {
+                "name": "CONTACTNAME",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The name of the primary contact person for the customer. This information is useful for direct communication and personalized service. It may include first and last names."
+            },
+            {
+                "name": "ADDRESS",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The physical street address of the customer. This field can include building number, street name, and any other address details. It supports location-based operations and reporting."
+            },
+            {
+                "name": "CITY",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The city where the customer is located. This information assists in grouping and filtering customer records by geographic region. It is often used in demographic analyses."
+            },
+            {
+                "name": "POSTALCODE",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The postal or ZIP code of the customer's address. This code helps in pinpointing the exact geographic area of the customer. It is important for shipping and logistics operations."
+            },
+            {
+                "name": "COUNTRY",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The country where the customer is located. It provides a global context for the customer data and is used for international segmentation and reporting. This field aids in multi-regional analysis."
+            }
+        ]
+    },
+    "AB_ORDERS": {
+        "table_name": "AB_ORDERS",
+        "columns": [
+            {
+                "name": "ORDERID",
+                "data_type": "NUMBER",
+                "primary_key": true,
+                "nullable": false,
+                "description": "A unique numeric identifier for each order. This column serves as the primary key, ensuring every order record is distinct and non-null."
+            },
+            {
+                "name": "CUSTOMERID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric identifier for the customer who placed the order. It links orders to the customer records and supports customer-specific queries and reporting."
+            },
+            {
+                "name": "EMPLOYEEID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric identifier for the employee responsible for processing the order. This helps in associating orders with specific employees for operational tracking."
+            },
+            {
+                "name": "ORDERYEAR",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The year when the order was placed. It is used for chronological analysis and to monitor order trends over different years."
+            },
+            {
+                "name": "ORDERMONTH",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The month in which the order was placed. This column aids in identifying seasonal patterns and monthly sales performance."
+            },
+            {
+                "name": "ORDERDAY",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The day of the month when the order was placed. This provides granularity for daily sales analysis and operational insights."
+            },
+            {
+                "name": "SHIPPERID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric identifier for the shipper tasked with delivering the order. This links the order to shipping providers and supports logistics tracking."
+            }
+        ]
+    },
+    "AB_PRODUCTS": {
+        "table_name": "AB_PRODUCTS",
+        "columns": [
+            {
+                "name": "PRODUCTID",
+                "data_type": "NUMBER",
+                "primary_key": true,
+                "nullable": false,
+                "description": "A unique numeric identifier for each product. This column serves as the primary key, ensuring that every product record is distinct and can be efficiently referenced."
+            },
+            {
+                "name": "PRODUCTNAME",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The official name or title of the product. This field is used for display purposes and product lookup, making it a key component in identifying the product."
+            },
+            {
+                "name": "SUPPLIERID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric identifier that represents the supplier of the product. It links products to their respective suppliers and is useful for managing inventory and procurement operations."
+            },
+            {
+                "name": "CATEGORYID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric code that categorizes the product. This column allows products to be grouped by category, aiding in filtering, reporting, and inventory management."
+            },
+            {
+                "name": "UNIT",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "Details the product's packaging or unit of measure. Examples include the packaging format (e.g., '10 boxes x 20 bags' or '24 - 12 oz bottles'), which provides context for inventory and sales."
+            },
+            {
+                "name": "PRICE",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The price of the product. This column typically contains the unit cost or list price, and is essential for revenue calculations, pricing strategies, and financial analysis."
+            }
+        ]
+    },
+    "AB_TIME": {
+        "table_name": "AB_TIME",
+        "columns": [
+            {
+                "name": "ROW_IDENTIFIER",
+                "data_type": "VARCHAR2(500)",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A label that uniquely identifies the time period record. It can represent a year (e.g., '1996') or a composite period (e.g., 'DEC1996') for finer granularity."
+            },
+            {
+                "name": "TIME_LEVEL",
+                "data_type": "VARCHAR2(500)",
+                "primary_key": false,
+                "nullable": true,
+                "description": "Indicates the granularity of the time period, such as 'YEAR' or 'MONTH'. This column helps differentiate between annual and monthly time data."
+            },
+            {
+                "name": "END_YEAR",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "Specifies the ending year for the time period. It is used to establish the upper boundary of the period and is essential for time-based analysis."
+            },
+            {
+                "name": "END_MONTH",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "Intended to capture the ending month for the time period. Although the column is defined as NUMBER, sample data shows textual values (e.g., 'DEC'). This may require standardization so that months are represented numerically."
+            },
+            {
+                "name": "END_DAY",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "Represents the day on which the time period ends. This column, along with END_YEAR and END_MONTH, helps to precisely define the boundary date of the period."
+            },
+            {
+                "name": "TIME_SPAN_IN_DAYS",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The total number of days that the time period spans. This field is useful for calculating durations and comparing periods on a day-to-day basis."
+            }
+        ]
+    },
+    "AB_CATEGORIES": {
+        "table_name": "AB_CATEGORIES",
+        "columns": [
+            {
+                "name": "CATEGORYID",
+                "data_type": "NUMBER",
+                "primary_key": true,
+                "nullable": false,
+                "description": "A unique numeric identifier for each category. This column serves as the primary key and guarantees that each category record is distinct. It is critical for joining with other tables."
+            },
+            {
+                "name": "CATEGORYNAME",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "The name of the category, such as 'Beverages' or 'Condiments'. This field is used for display and grouping purposes in reports and dashboards. It provides a brief label for the category."
+            },
+            {
+                "name": "DESCRIPTION",
+                "data_type": "TEXT",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A detailed textual description of the category. It explains the range of products included, such as 'Soft drinks, coffees, teas, beers, and ales' for Beverages. This field aids in understanding the category context."
+            }
+        ]
+    },
+    "AB_ORDERDETAILS": {
+        "table_name": "AB_ORDERDETAILS",
+        "columns": [
+            {
+                "name": "ORDERDETAILID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric identifier for each order detail record. This field uniquely identifies each line item in an order and is used for internal reference."
+            },
+            {
+                "name": "ORDERID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric reference linking the order detail to a master order in the AB_ORDERS table. This field enables aggregation and analysis of complete orders."
+            },
+            {
+                "name": "PRODUCTID",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "A numeric identifier for the product associated with this order detail. This links the detail record to product information in the AB_PRODUCTS table, supporting inventory and sales analysis."
+            },
+            {
+                "name": "QUANTITY",
+                "data_type": "NUMBER",
+                "primary_key": false,
+                "nullable": true,
+                "description": "Indicates the quantity of the product ordered in this record. It is essential for calculating totals, managing inventory, and understanding product demand."
+            }
+        ]
+    }
+}
