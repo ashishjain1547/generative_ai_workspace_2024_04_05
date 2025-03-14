@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-time Speech-to-Text with Gemini 2.0 Flash</title>
+  <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    button { margin: 0.5em; }
+    #output { border: 1px solid #ccc; padding: 1em; height: 200px; overflow-y: scroll; }
+  </style>
+</head>
+<body>
+  <h1>Real-time Speech-to-Text with Gemini 2.0 Flash</h1>
+  <button id="startBtn">Start Recording</button>
+  <button id="stopBtn" disabled>Stop Recording</button>
+  <div id="output"></div>
+
+  <script>
+    const socket = io();
+    let mediaRecorder;
+    let recordedChunks = [];
+
+    const startBtn = document.getElementById("startBtn");
+    const stopBtn = document.getElementById("stopBtn");
+    const outputDiv = document.getElementById("output");
+
+    startBtn.addEventListener("click", async () => {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        // Create a MediaRecorder using WebM/Opus (default in many browsers)
+        mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm" });
+        recordedChunks = [];
+
+        mediaRecorder.ondataavailable = function(e) {
+          if (e.data.size > 0) {
+            recordedChunks.push(e.data);
+            // Convert blob to base64 and send it immediately.
+            const reader = new FileReader();
+            reader.onloadend = function() {
+              // The result is a DataURL; remove the prefix.
+              const base64data = reader.result.split(",")[1];
+              socket.emit("audio_chunk", { chunk: base64data });
+            };
+            reader.readAsDataURL(e.data);
+          }
+        };
+
+        mediaRecorder.start(1000); // Send chunks every 1 second.
+        startBtn.disabled = true;
+        stopBtn.disabled = false;
+      } catch (err) {
+        alert("Error accessing microphone: " + err);
+      }
+    });
+
+    stopBtn.addEventListener("click", () => {
+      if (mediaRecorder && mediaRecorder.state !== "inactive") {
+        mediaRecorder.stop();
+      }
+      startBtn.disabled = false;
+      stopBtn.disabled = true;
+    });
+
+    socket.on("transcription", function(data) {
+      if (data.text) {
+        outputDiv.innerHTML += `<p>${data.text}</p>`;
+      } else if (data.error) {
+        outputDiv.innerHTML += `<p style="color:red;">Error: ${data.error}</p>`;
+      }
+      outputDiv.scrollTop = outputDiv.scrollHeight;
+    });
+  </script>
+</body>
+</html>
