@@ -1,0 +1,855 @@
+<pre>
+<h2>WITH PYTHON 3.13</h2>
+
+(base) ashish@ashish-ThinkPad-T440s:~/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI$ conda env create -f env.yml 
+Retrieving notices: done
+Channels:
+    - conda-forge
+    - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+Downloading and Extracting Packages:
+                                                                                                                                                            
+Preparing transaction: done                                                                                                                              
+Verifying transaction: done                                                                                                                              
+Executing transaction: done                                                                                                                              
+Installing pip dependencies: - Ran pip subprocess with arguments:                                                                                        
+['/home/ashish/anaconda3/envs/crewai_2025/bin/python', '-m', 'pip', 'install', '-U', '-r', '/home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt', '--exists-action=b']                                              
+Pip subprocess output:                                                                                                                                   
+Collecting crewai (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                                                                            
+    Downloading crewai-0.11.2-py3-none-any.whl.metadata (12 kB)                                                                                            
+Collecting crewai_tools (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 2))                                                                                                                      
+    Downloading crewai_tools-0.0.1-py3-none-any.whl.metadata (530 bytes)                                                                                   
+Collecting langchain_community (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))                                                                                                               
+    Downloading langchain_community-0.3.19-py3-none-any.whl.metadata (2.4 kB)                                                                              
+Collecting instructor&lt;0.6.0,>=0.5.2 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                                                  
+    Downloading instructor-0.5.2-py3-none-any.whl.metadata (10 kB)                                                                                         
+Collecting langchain&lt;0.2.0,>=0.1.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                                                   
+    Downloading langchain-0.1.20-py3-none-any.whl.metadata (13 kB)                                                                                         
+Collecting langchain-openai&lt;0.0.6,>=0.0.5 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                                            
+    Downloading langchain_openai-0.0.5-py3-none-any.whl.metadata (2.5 kB)                                                                                  
+Collecting openai&lt;2.0.0,>=1.7.1 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                                                      
+    Downloading openai-1.66.3-py3-none-any.whl.metadata (25 kB)                                                                                            
+Collecting opentelemetry-api&lt;2.0.0,>=1.22.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                                          
+    Downloading opentelemetry_api-1.31.0-py3-none-any.whl.metadata (1.6 kB)                                                                                
+Collecting opentelemetry-exporter-otlp-proto-http&lt;2.0.0,>=1.22.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))                                                                     
+    Downloading opentelemetry_exporter_otlp_proto_http-1.31.0-py3-none-any.whl.metadata (2.4 kB)                                                           
+Collecting opentelemetry-sdk&lt;2.0.0,>=1.22.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))
+    Downloading opentelemetry_sdk-1.31.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting pydantic&lt;3.0.0,>=2.4.2 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))
+    Downloading pydantic-2.10.6-py3-none-any.whl.metadata (30 kB)
+Collecting regex&lt;2024.0.0,>=2023.12.25 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 1))
+    Downloading regex-2023.12.25.tar.gz (394 kB)
+    Installing build dependencies: started
+    Installing build dependencies: finished with status 'done'
+    Getting requirements to build wheel: started
+    Getting requirements to build wheel: finished with status 'done'
+    Preparing metadata (pyproject.toml): started
+    Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting langchain-core&lt;1.0.0,>=0.3.41 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading langchain_core-0.3.44-py3-none-any.whl.metadata (5.9 kB)
+INFO: pip is looking at multiple versions of langchain-community to determine which version is compatible with other requirements. This could take a while.
+Collecting langchain_community (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Using cached langchain_community-0.3.18-py3-none-any.whl.metadata (2.4 kB)
+    Downloading langchain_community-0.3.17-py3-none-any.whl.metadata (2.4 kB)
+    Downloading langchain_community-0.3.16-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: PyYAML>=5.3 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.13/site-packages (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3)) (6.0.2)
+Collecting SQLAlchemy&lt;3,>=1.4 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading sqlalchemy-2.0.39-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Collecting aiohttp&lt;4.0.0,>=3.8.3 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading aiohttp-3.11.13-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+Collecting dataclasses-json&lt;0.7,>=0.5.7 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Using cached dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting httpx-sse&lt;0.5.0,>=0.4.0 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Using cached httpx_sse-0.4.0-py3-none-any.whl.metadata (9.0 kB)
+Collecting langchain_community (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading langchain_community-0.3.15-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.14-py3-none-any.whl.metadata (2.9 kB)
+    Using cached langchain_community-0.3.13-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.12-py3-none-any.whl.metadata (2.9 kB)
+INFO: pip is still looking at multiple versions of langchain-community to determine which version is compatible with other requirements. This could take a while.
+    Downloading langchain_community-0.3.11-py3-none-any.whl.metadata (2.9 kB)
+    Using cached langchain_community-0.3.10-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.9-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.8-py3-none-any.whl.metadata (2.9 kB)
+Collecting SQLAlchemy&lt;2.0.36,>=1.4 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading SQLAlchemy-2.0.35-py3-none-any.whl.metadata (9.6 kB)
+Collecting langchain_community (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading langchain_community-0.3.7-py3-none-any.whl.metadata (2.9 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+    Downloading langchain_community-0.3.6-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.5-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.4-py3-none-any.whl.metadata (2.9 kB)
+    Downloading langchain_community-0.3.3-py3-none-any.whl.metadata (2.8 kB)
+    Downloading langchain_community-0.3.2-py3-none-any.whl.metadata (2.8 kB)
+    Downloading langchain_community-0.3.1-py3-none-any.whl.metadata (2.8 kB)
+    Downloading langchain_community-0.3.0-py3-none-any.whl.metadata (2.8 kB)
+    Downloading langchain_community-0.2.19-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.18-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.17-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.16-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.15-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.13-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.12-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.11-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.10-py3-none-any.whl.metadata (2.7 kB)
+    Downloading langchain_community-0.2.9-py3-none-any.whl.metadata (2.5 kB)
+    Downloading langchain_community-0.2.7-py3-none-any.whl.metadata (2.5 kB)
+    Downloading langchain_community-0.2.6-py3-none-any.whl.metadata (2.5 kB)
+    Downloading langchain_community-0.2.5-py3-none-any.whl.metadata (2.5 kB)
+    Downloading langchain_community-0.2.4-py3-none-any.whl.metadata (2.4 kB)
+    Downloading langchain_community-0.2.3-py3-none-any.whl.metadata (9.0 kB)
+    Downloading langchain_community-0.2.2-py3-none-any.whl.metadata (8.9 kB)
+    Downloading langchain_community-0.2.1-py3-none-any.whl.metadata (8.9 kB)
+    Downloading langchain_community-0.2.0-py3-none-any.whl.metadata (8.8 kB)
+    Downloading langchain_community-0.0.38-py3-none-any.whl.metadata (8.7 kB)
+Collecting langchain-core&lt;0.2.0,>=0.1.52 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith&lt;0.2.0,>=0.1.0 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading langsmith-0.1.147-py3-none-any.whl.metadata (14 kB)
+Collecting numpy&lt;2,>=1 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.9zhnbb1s.requirements.txt (line 3))
+    Downloading numpy-1.26.4.tar.gz (15.8 MB)
+        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.8/15.8 MB 5.7 MB/s eta 0:00:00
+    Installing build dependencies: started
+    Installing build dependencies: finished with status 'done'
+    Getting requirements to build wheel: started
+    Getting requirements to build wheel: finished with status 'done'
+    Installing backend dependencies: started
+    Installing backend dependencies: finished with status 'done'
+    Preparing metadata (pyproject.toml): started
+    Preparing metadata (pyproject.toml): finished with status 'error'
+
+Pip subprocess error:
+    error: subprocess-exited-with-error
+    
+    × Preparing metadata (pyproject.toml) did not run successfully.
+    │ exit code: 1
+    ╰─> [20 lines of output]
+        + /home/ashish/anaconda3/envs/crewai_2025/bin/python /tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0/vendored-meson/meson/meson.py setup /tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0 /tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0/.mesonpy-i9ruqxli -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --native-file=/tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0/.mesonpy-i9ruqxli/meson-python-native-file.ini
+        The Meson build system
+        Version: 1.2.99
+        Source dir: /tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0
+        Build dir: /tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0/.mesonpy-i9ruqxli
+        Build type: native build
+        Project name: NumPy
+        Project version: 1.26.4
+        
+        ../meson.build:1:0: ERROR: Unknown compiler(s): [['cc'], ['gcc'], ['clang'], ['nvc'], ['pgcc'], ['icc'], ['icx']]
+        The following exception(s) were encountered:
+        Running `cc --version` gave "[Errno 2] No such file or directory: 'cc'"
+        Running `gcc --version` gave "[Errno 2] No such file or directory: 'gcc'"
+        Running `clang --version` gave "[Errno 2] No such file or directory: 'clang'"
+        Running `nvc --version` gave "[Errno 2] No such file or directory: 'nvc'"
+        Running `pgcc --version` gave "[Errno 2] No such file or directory: 'pgcc'"
+        Running `icc --version` gave "[Errno 2] No such file or directory: 'icc'"
+        Running `icx --version` gave "[Errno 2] No such file or directory: 'icx'"
+        
+        A full log can be found at /tmp/pip-install-hok64j_q/numpy_579c9302e31c4ff28cb13163e0d6a7f0/.mesonpy-i9ruqxli/meson-logs/meson-log.txt
+        [end of output]
+    
+    note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+failed
+
+CondaEnvException: Pip failed
+
+
+
+
+
+
+
+
+
+
+
+
+
+(base) ashish@ashish-ThinkPad-T440s:~/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI$ conda env list
+
+# conda environments:
+#
+base                 * /home/ashish/anaconda3
+crewai_2025            /home/ashish/anaconda3/envs/crewai_2025
+googleai_202406        /home/ashish/anaconda3/envs/googleai_202406
+hf_202412              /home/ashish/anaconda3/envs/hf_202412
+hindi_to_english_202407   /home/ashish/anaconda3/envs/hindi_to_english_202407
+langgraph_202412       /home/ashish/anaconda3/envs/langgraph_202412
+openai_202412          /home/ashish/anaconda3/envs/openai_202412
+tf_env                 /home/ashish/anaconda3/envs/tf_env
+
+
+
+
+
+$ conda env remove -n crewai_2025
+
+
+
+(base) ashish@ashish-ThinkPad-T440s:~/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI$ conda env list
+
+# conda environments:
+#
+base                 * /home/ashish/anaconda3
+googleai_202406        /home/ashish/anaconda3/envs/googleai_202406
+hf_202412              /home/ashish/anaconda3/envs/hf_202412
+hindi_to_english_202407   /home/ashish/anaconda3/envs/hindi_to_english_202407
+langgraph_202412       /home/ashish/anaconda3/envs/langgraph_202412
+openai_202412          /home/ashish/anaconda3/envs/openai_202412
+tf_env                 /home/ashish/anaconda3/envs/tf_env
+
+
+
+
+
+
+
+<hr>
+<br>
+
+
+(base) ashish@ashish-ThinkPad-T440s:~/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI$ conda env create -f env.yml 
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+Downloading and Extracting Packages:
+                                                                                                                                                         
+Preparing transaction: done                                                                                                                              
+Verifying transaction: done                                                                                                                              
+Executing transaction: done                                                                                                                              
+Installing pip dependencies: - Ran pip subprocess with arguments:                                                                                        
+['/home/ashish/anaconda3/envs/crewai_2025/bin/python', '-m', 'pip', 'install', '-U', '-r', '/home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt', '--exists-action=b']                                              
+Pip subprocess output:                                                                                                                                   
+Collecting crewai (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading crewai-0.105.0-py3-none-any.whl.metadata (28 kB)
+Collecting crewai_tools (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading crewai_tools-0.37.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting langchain_community (from -r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached langchain_community-0.3.19-py3-none-any.whl.metadata (2.4 kB)
+Collecting appdirs>=1.4.4 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached appdirs-1.4.4-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting auth0-python>=4.7.1 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading auth0_python-4.8.1-py3-none-any.whl.metadata (9.0 kB)
+Collecting blinker>=1.9.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting chromadb>=0.5.23 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading chromadb-0.6.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting click>=8.1.7 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting instructor>=1.3.3 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading instructor-1.7.4-py3-none-any.whl.metadata (19 kB)
+Collecting json-repair>=0.25.2 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading json_repair-0.39.1-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: json5>=0.10.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.10.0)
+Collecting jsonref>=1.1.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading jsonref-1.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting litellm==1.60.2 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading litellm-1.60.2-py3-none-any.whl.metadata (36 kB)
+Collecting openai>=1.13.3 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached openai-1.66.3-py3-none-any.whl.metadata (25 kB)
+Collecting openpyxl>=3.1.5 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting opentelemetry-api>=1.22.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached opentelemetry_api-1.31.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting opentelemetry-exporter-otlp-proto-http>=1.22.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached opentelemetry_exporter_otlp_proto_http-1.31.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting opentelemetry-sdk>=1.22.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached opentelemetry_sdk-1.31.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting pdfplumber>=0.11.4 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pdfplumber-0.11.5-py3-none-any.whl.metadata (42 kB)
+Collecting pydantic>=2.4.2 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached pydantic-2.10.6-py3-none-any.whl.metadata (30 kB)
+Collecting python-dotenv>=1.0.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Collecting pyvis>=0.3.2 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pyvis-0.3.2-py3-none-any.whl.metadata (1.7 kB)
+Collecting regex>=2024.9.11 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached regex-2024.11.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (40 kB)
+Collecting tomli-w>=1.1.0 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+Requirement already satisfied: tomli>=2.0.2 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2.2.1)
+Collecting uv>=0.4.25 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading uv-0.6.6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting aiohttp (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading aiohttp-3.11.13-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+Collecting httpx<0.28.0,>=0.23.0 (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading httpx-0.27.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: importlib-metadata>=6.8.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (8.6.1)
+Requirement already satisfied: jinja2<4.0.0,>=3.1.2 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: jsonschema<5.0.0,>=4.22.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (4.23.0)
+Collecting tiktoken>=0.7.0 (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached tiktoken-0.9.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting tokenizers (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading tokenizers-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting docker>=7.1.0 (from crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading docker-7.1.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting embedchain>=0.1.114 (from crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading embedchain-0.1.127-py3-none-any.whl.metadata (9.3 kB)
+Collecting lancedb>=0.5.4 (from crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading lancedb-0.21.1-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (4.1 kB)
+Collecting pyright>=1.1.350 (from crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pyright-1.1.396-py3-none-any.whl.metadata (6.6 kB)
+Collecting pytube>=15.0.0 (from crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pytube-15.0.0-py3-none-any.whl.metadata (5.0 kB)
+Requirement already satisfied: requests>=2.31.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (2.32.3)
+Collecting langchain-core<1.0.0,>=0.3.41 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached langchain_core-0.3.44-py3-none-any.whl.metadata (5.9 kB)
+Collecting langchain<1.0.0,>=0.3.20 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading langchain-0.3.20-py3-none-any.whl.metadata (7.7 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading sqlalchemy-2.0.39-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Requirement already satisfied: PyYAML>=5.3 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3)) (6.0.2)
+Collecting tenacity!=8.4.0,<10,>=8.1.0 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading tenacity-9.0.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting pydantic-settings<3.0.0,>=2.4.0 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading pydantic_settings-2.8.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting langsmith<0.4,>=0.1.125 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading langsmith-0.3.13-py3-none-any.whl.metadata (14 kB)
+Collecting httpx-sse<1.0.0,>=0.4.0 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached httpx_sse-0.4.0-py3-none-any.whl.metadata (9.0 kB)
+Collecting numpy<3,>=1.26.2 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading numpy-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting aiohappyeyeballs>=2.3.0 (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: attrs>=17.3.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (25.2.0)
+Collecting frozenlist>=1.1.1 (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading frozenlist-1.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading multidict-6.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.0 kB)
+Collecting propcache>=0.2.0 (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading propcache-0.3.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading yarl-1.18.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (69 kB)
+Collecting cryptography>=43.0.1 (from auth0-python>=4.7.1->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading cryptography-44.0.2-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+Collecting pyjwt>=2.8.0 (from auth0-python>=4.7.1->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+Requirement already satisfied: urllib3>=2.2.3 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from auth0-python>=4.7.1->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2.3.0)
+Collecting build>=1.0.3 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading build-1.2.2.post1-py3-none-any.whl.metadata (6.5 kB)
+Collecting chroma-hnswlib==0.7.6 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading chroma_hnswlib-0.7.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (252 bytes)
+Collecting fastapi>=0.95.2 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached fastapi-0.115.11-py3-none-any.whl.metadata (27 kB)
+Collecting uvicorn>=0.18.3 (from uvicorn[standard]>=0.18.3->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting posthog>=2.4.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading posthog-3.19.1-py2.py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: typing_extensions>=4.5.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (4.12.2)
+Collecting onnxruntime>=1.14.1 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading onnxruntime-1.21.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.7 kB)
+Collecting opentelemetry-exporter-otlp-proto-grpc>=1.2.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_exporter_otlp_proto_grpc-1.31.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting opentelemetry-instrumentation-fastapi>=0.41b0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_instrumentation_fastapi-0.52b0-py3-none-any.whl.metadata (2.2 kB)
+Collecting pypika>=0.48.9 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading PyPika-0.48.9.tar.gz (67 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting tqdm>=4.65.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Requirement already satisfied: overrides>=7.3.1 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (7.7.0)
+Requirement already satisfied: importlib-resources in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (6.5.2)
+Collecting grpcio>=1.58.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading grpcio-1.71.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
+Collecting bcrypt>=4.0.1 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading bcrypt-4.3.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+Collecting typer>=0.9.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached typer-0.15.2-py3-none-any.whl.metadata (15 kB)
+Collecting kubernetes>=28.1.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading kubernetes-32.0.1-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting mmh3>=4.0.1 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading mmh3-5.1.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (16 kB)
+Collecting orjson>=3.9.12 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading orjson-3.10.15-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (41 kB)
+Collecting rich>=10.11.0 (from chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7,>=0.5.7->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading marshmallow-3.26.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7,>=0.5.7->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting alembic<2.0.0,>=1.13.1 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading alembic-1.15.1-py3-none-any.whl.metadata (7.2 kB)
+Requirement already satisfied: beautifulsoup4<5.0.0,>=4.12.2 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (4.13.3)
+Collecting chromadb>=0.5.23 (from crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading chromadb-0.5.23-py3-none-any.whl.metadata (6.8 kB)
+Collecting cohere<6.0,>=5.3 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading cohere-5.14.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting google-cloud-aiplatform<2.0.0,>=1.26.1 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_cloud_aiplatform-1.84.0-py2.py3-none-any.whl.metadata (33 kB)
+Collecting gptcache<0.2.0,>=0.1.43 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading gptcache-0.1.44-py3-none-any.whl.metadata (24 kB)
+Collecting langchain-cohere<0.4.0,>=0.3.0 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading langchain_cohere-0.3.5-py3-none-any.whl.metadata (6.7 kB)
+Collecting langchain-openai<0.3.0,>=0.2.1 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading langchain_openai-0.2.14-py3-none-any.whl.metadata (2.7 kB)
+Collecting langsmith<0.4,>=0.1.125 (from langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached langsmith-0.1.147-py3-none-any.whl.metadata (14 kB)
+Collecting mem0ai<0.2.0,>=0.1.54 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading mem0ai-0.1.67-py3-none-any.whl.metadata (8.6 kB)
+Collecting pypdf<6.0.0,>=5.0.0 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pypdf-5.3.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting pysbd<0.4.0,>=0.3.4 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pysbd-0.3.4-py3-none-any.whl.metadata (6.1 kB)
+Collecting schema<0.8.0,>=0.7.5 (from embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading schema-0.7.7-py2.py3-none-any.whl.metadata (34 kB)
+Collecting tiktoken>=0.7.0 (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading tiktoken-0.7.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting tokenizers (from litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading tokenizers-0.20.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting docstring-parser<1.0,>=0.16 (from instructor>=1.3.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading docstring_parser-0.16-py3-none-any.whl.metadata (3.0 kB)
+Collecting jiter<0.9,>=0.6.1 (from instructor>=1.3.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached jiter-0.8.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+Collecting pydantic-core<3.0.0,>=2.18.0 (from instructor>=1.3.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pydantic_core-2.31.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Collecting deprecation (from lancedb>=0.5.4->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)
+Collecting pyarrow>=14 (from lancedb>=0.5.4->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pyarrow-19.0.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Requirement already satisfied: packaging in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from lancedb>=0.5.4->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (24.2)
+Collecting pylance>=0.23.2 (from lancedb>=0.5.4->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pylance-0.24.1-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (7.2 kB)
+Collecting langchain-text-splitters<1.0.0,>=0.3.6 (from langchain<1.0.0,>=0.3.20->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached langchain_text_splitters-0.3.6-py3-none-any.whl.metadata (1.9 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain-core<1.0.0,>=0.3.41->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting requests-toolbelt<2.0.0,>=1.0.0 (from langsmith<0.4,>=0.1.125->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: anyio<5,>=3.5.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from openai>=1.13.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (4.8.0)
+Collecting distro<2,>=1.7.0 (from openai>=1.13.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Requirement already satisfied: sniffio in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from openai>=1.13.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (1.3.1)
+Collecting et-xmlfile (from openpyxl>=3.1.5->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting deprecated>=1.2.6 (from opentelemetry-api>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading Deprecated-1.2.18-py2.py3-none-any.whl.metadata (5.7 kB)
+Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading googleapis_common_protos-1.69.1-py2.py3-none-any.whl.metadata (9.3 kB)
+Collecting opentelemetry-exporter-otlp-proto-common==1.31.0 (from opentelemetry-exporter-otlp-proto-http>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_exporter_otlp_proto_common-1.31.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting opentelemetry-proto==1.31.0 (from opentelemetry-exporter-otlp-proto-http>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_proto-1.31.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting protobuf<6.0,>=5.0 (from opentelemetry-proto==1.31.0->opentelemetry-exporter-otlp-proto-http>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+Collecting opentelemetry-semantic-conventions==0.52b0 (from opentelemetry-sdk>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_semantic_conventions-0.52b0-py3-none-any.whl.metadata (2.5 kB)
+Collecting pdfminer.six==20231228 (from pdfplumber>=0.11.4->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pdfminer.six-20231228-py3-none-any.whl.metadata (4.2 kB)
+Collecting Pillow>=9.1 (from pdfplumber>=0.11.4->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pillow-11.1.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pypdfium2>=4.18.0 (from pdfplumber>=0.11.4->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pypdfium2-4.30.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (48 kB)
+Requirement already satisfied: charset-normalizer>=2.0.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from pdfminer.six==20231228->pdfplumber>=0.11.4->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (3.4.1)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.4.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core<3.0.0,>=2.18.0 (from instructor>=1.3.3->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pydantic_core-2.27.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting nodeenv>=1.6.0 (from pyright>=1.1.350->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading nodeenv-1.9.1-py2.py3-none-any.whl.metadata (21 kB)
+Requirement already satisfied: ipython>=5.3.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (9.0.2)
+Collecting jsonpickle>=1.4.1 (from pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading jsonpickle-4.0.2-py3-none-any.whl.metadata (8.2 kB)
+Collecting networkx>=1.11 (from pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: idna<4,>=2.5 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from requests>=2.31.0->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (3.10)
+Requirement already satisfied: certifi>=2017.4.17 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from requests>=2.31.0->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (2025.1.31)
+Collecting greenlet!=0.4.17 (from SQLAlchemy<3,>=1.4->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Downloading greenlet-3.1.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting Mako (from alembic<2.0.0,>=1.13.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading Mako-1.3.9-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: soupsieve>1.2 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from beautifulsoup4<5.0.0,>=4.12.2->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (2.5)
+Collecting pyproject_hooks (from build>=1.0.3->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting fastavro<2.0.0,>=1.9.4 (from cohere<6.0,>=5.3->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Using cached fastavro-1.10.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting types-requests<3.0.0,>=2.0.0 (from cohere<6.0,>=5.3->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading types_requests-2.32.0.20250306-py3-none-any.whl.metadata (2.3 kB)
+Requirement already satisfied: cffi>=1.12 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from cryptography>=43.0.1->auth0-python>=4.7.1->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (1.17.1)
+Collecting wrapt<2,>=1.10 (from deprecated>=1.2.6->opentelemetry-api>=1.22.0->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading wrapt-1.17.2-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.4 kB)
+Collecting starlette<0.47.0,>=0.40.0 (from fastapi>=0.95.2->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached starlette-0.46.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_api_core-2.24.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting google-auth<3.0.0dev,>=2.14.1 (from google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_auth-2.38.0-py2.py3-none-any.whl.metadata (4.8 kB)
+Collecting proto-plus<2.0.0dev,>=1.22.3 (from google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-cloud-storage<3.0.0dev,>=1.32.0 (from google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl.metadata (9.1 kB)
+Collecting google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0 (from google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_cloud_bigquery-3.30.0-py2.py3-none-any.whl.metadata (7.9 kB)
+Collecting google-cloud-resource-manager<3.0.0dev,>=1.3.3 (from google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_cloud_resource_manager-1.14.1-py2.py3-none-any.whl.metadata (5.4 kB)
+Collecting shapely<3.0.0dev (from google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading shapely-2.0.7-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting cachetools (from gptcache<0.2.0,>=0.1.43->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+Requirement already satisfied: httpcore==1.* in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from httpx<0.28.0,>=0.23.0->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (1.0.7)
+Requirement already satisfied: h11<0.15,>=0.13 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from httpcore==1.*->httpx<0.28.0,>=0.23.0->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.14.0)
+Requirement already satisfied: zipp>=3.20 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from importlib-metadata>=6.8.0->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (3.21.0)
+Requirement already satisfied: decorator in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (5.2.1)
+Requirement already satisfied: ipython-pygments-lexers in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (1.1.1)
+Requirement already satisfied: jedi>=0.16 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.19.2)
+Requirement already satisfied: matplotlib-inline in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.1.7)
+Requirement already satisfied: pexpect>4.3 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (4.9.0)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (3.0.50)
+Requirement already satisfied: pygments>=2.4.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2.19.1)
+Requirement already satisfied: stack_data in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.6.3)
+Requirement already satisfied: traitlets>=5.13.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (5.14.3)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from jinja2<4.0.0,>=3.1.2->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (3.0.2)
+Requirement already satisfied: jsonpointer>=1.9 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from jsonpatch<2.0,>=1.33->langchain-core<1.0.0,>=0.3.41->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3)) (3.0.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from jsonschema<5.0.0,>=4.22.0->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2024.10.1)
+Requirement already satisfied: referencing>=0.28.4 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from jsonschema<5.0.0,>=4.22.0->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.36.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from jsonschema<5.0.0,>=4.22.0->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.23.1)
+Requirement already satisfied: six>=1.9.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from kubernetes>=28.1.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (1.17.0)
+Requirement already satisfied: python-dateutil>=2.5.3 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from kubernetes>=28.1.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from kubernetes>=28.1.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (1.8.0)
+Collecting requests-oauthlib (from kubernetes>=28.1.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting oauthlib>=3.2.2 (from kubernetes>=28.1.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading oauthlib-3.2.2-py3-none-any.whl.metadata (7.5 kB)
+Collecting durationpy>=0.7 (from kubernetes>=28.1.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading durationpy-0.9-py3-none-any.whl.metadata (338 bytes)
+Collecting langchain-experimental<0.4.0,>=0.3.0 (from langchain-cohere<0.4.0,>=0.3.0->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading langchain_experimental-0.3.4-py3-none-any.whl.metadata (1.7 kB)
+Collecting pandas>=1.4.3 (from langchain-cohere<0.4.0,>=0.3.0->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+Collecting tabulate<0.10.0,>=0.9.0 (from langchain-cohere<0.4.0,>=0.3.0->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
+Collecting psycopg2-binary<3.0.0,>=2.9.10 (from mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting pytz<2025.0,>=2024.1 (from mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting qdrant-client<2.0.0,>=1.9.1 (from mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading qdrant_client-1.13.3-py3-none-any.whl.metadata (10 kB)
+Collecting coloredlogs (from onnxruntime>=1.14.1->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+Collecting flatbuffers (from onnxruntime>=1.14.1->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading flatbuffers-25.2.10-py2.py3-none-any.whl.metadata (875 bytes)
+Collecting sympy (from onnxruntime>=1.14.1->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading sympy-1.13.3-py3-none-any.whl.metadata (12 kB)
+Collecting opentelemetry-instrumentation-asgi==0.52b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_instrumentation_asgi-0.52b0-py3-none-any.whl.metadata (2.1 kB)
+Collecting opentelemetry-instrumentation==0.52b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_instrumentation-0.52b0-py3-none-any.whl.metadata (6.8 kB)
+Collecting opentelemetry-util-http==0.52b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading opentelemetry_util_http-0.52b0-py3-none-any.whl.metadata (2.6 kB)
+Collecting asgiref~=3.0 (from opentelemetry-instrumentation-asgi==0.52b0->opentelemetry-instrumentation-fastapi>=0.41b0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting monotonic>=1.5 (from posthog>=2.4.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading monotonic-1.6-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting backoff>=1.10.0 (from posthog>=2.4.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting huggingface-hub<1.0,>=0.16.4 (from tokenizers->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading huggingface_hub-0.29.3-py3-none-any.whl.metadata (13 kB)
+Collecting shellingham>=1.3.0 (from typer>=0.9.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7,>=0.5.7->langchain_community->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 3))
+  Using cached mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting httptools>=0.6.3 (from uvicorn[standard]>=0.18.3->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading httptools-0.6.4-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.6 kB)
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]>=0.18.3->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading uvloop-0.21.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting watchfiles>=0.13 (from uvicorn[standard]>=0.18.3->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading watchfiles-1.0.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting websockets>=10.4 (from uvicorn[standard]>=0.18.3->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached websockets-15.0.1-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Requirement already satisfied: pycparser in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from cffi>=1.12->cryptography>=43.0.1->auth0-python>=4.7.1->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2.22)
+Collecting grpcio-status<2.0.dev0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading grpcio_status-1.71.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pyasn1_modules-0.4.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Using cached rsa-4.9-py3-none-any.whl.metadata (4.2 kB)
+Collecting google-cloud-core<3.0.0dev,>=2.4.1 (from google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_cloud_core-2.4.3-py2.py3-none-any.whl.metadata (2.7 kB)
+Collecting google-resumable-media<3.0dev,>=2.0.0 (from google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_resumable_media-2.7.2-py2.py3-none-any.whl.metadata (2.2 kB)
+Collecting grpc-google-iam-v1<1.0.0dev,>=0.14.0 (from google-cloud-resource-manager<3.0.0dev,>=1.3.3->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading grpc_google_iam_v1-0.14.1-py2.py3-none-any.whl.metadata (9.2 kB)
+Collecting google-crc32c<2.0dev,>=1.0 (from google-cloud-storage<3.0.0dev,>=1.32.0->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading google_crc32c-1.6.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.3 kB)
+Collecting filelock (from huggingface-hub<1.0,>=0.16.4->tokenizers->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<1.0,>=0.16.4->tokenizers->litellm==1.60.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from jedi>=0.16->ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.8.4)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting tzdata>=2022.7 (from pandas>=1.4.3->langchain-cohere<0.4.0,>=0.3.0->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading tzdata-2025.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: ptyprocess>=0.5 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from pexpect>4.3->ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: wcwidth in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.2.13)
+Collecting grpcio-tools>=1.41.0 (from qdrant-client<2.0.0,>=1.9.1->mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading grpcio_tools-1.71.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.3 kB)
+Collecting portalocker<3.0.0,>=2.7.0 (from qdrant-client<2.0.0,>=1.9.1->mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading portalocker-2.10.1-py3-none-any.whl.metadata (8.5 kB)
+Collecting humanfriendly>=9.1 (from coloredlogs->onnxruntime>=1.14.1->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+Requirement already satisfied: executing>=1.2.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from stack_data->ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (2.1.0)
+Requirement already satisfied: asttokens>=2.1.0 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from stack_data->ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (3.0.0)
+Requirement already satisfied: pure_eval in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from stack_data->ipython>=5.3.0->pyvis>=0.3.2->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1)) (0.2.3)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->onnxruntime>=1.14.1->chromadb>=0.5.23->crewai->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 1))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Requirement already satisfied: setuptools in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from grpcio-tools>=1.41.0->qdrant-client<2.0.0,>=1.9.1->mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (75.8.2)
+Requirement already satisfied: h2<5,>=3 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from httpx[http2]>=0.20.0->qdrant-client<2.0.0,>=1.9.1->mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (4.2.0)
+Collecting pyasn1<0.7.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform<2.0.0,>=1.26.1->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2))
+  Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: hyperframe<7,>=6.1 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from h2<5,>=3->httpx[http2]>=0.20.0->qdrant-client<2.0.0,>=1.9.1->mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (6.1.0)
+Requirement already satisfied: hpack<5,>=4.1 in /home/ashish/anaconda3/envs/crewai_2025/lib/python3.12/site-packages (from h2<5,>=3->httpx[http2]>=0.20.0->qdrant-client<2.0.0,>=1.9.1->mem0ai<0.2.0,>=0.1.54->embedchain>=0.1.114->crewai_tools->-r /home/ashish/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI/condaenv.8quddhb5.requirements.txt (line 2)) (4.1.0)
+Downloading crewai-0.105.0-py3-none-any.whl (252 kB)
+Downloading litellm-1.60.2-py3-none-any.whl (6.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.7/6.7 MB 7.8 MB/s eta 0:00:00
+Downloading crewai_tools-0.37.0-py3-none-any.whl (548 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 548.5/548.5 kB 2.6 MB/s eta 0:00:00
+Downloading langchain_community-0.3.19-py3-none-any.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 4.6 MB/s eta 0:00:00
+Downloading aiohttp-3.11.13-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 4.5 MB/s eta 0:00:00
+Using cached appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Downloading auth0_python-4.8.1-py3-none-any.whl (134 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading chroma_hnswlib-0.7.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 7.0 MB/s eta 0:00:00
+Downloading click-8.1.8-py3-none-any.whl (98 kB)
+Using cached dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+Downloading docker-7.1.0-py3-none-any.whl (147 kB)
+Downloading embedchain-0.1.127-py3-none-any.whl (211 kB)
+Downloading chromadb-0.5.23-py3-none-any.whl (628 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 628.3/628.3 kB 5.1 MB/s eta 0:00:00
+Using cached httpx_sse-0.4.0-py3-none-any.whl (7.8 kB)
+Downloading instructor-1.7.4-py3-none-any.whl (79 kB)
+Downloading json_repair-0.39.1-py3-none-any.whl (20 kB)
+Downloading jsonref-1.1.0-py3-none-any.whl (9.4 kB)
+Downloading lancedb-0.21.1-cp39-abi3-manylinux_2_28_x86_64.whl (33.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.2/33.2 MB 5.0 MB/s eta 0:00:00
+Downloading langchain-0.3.20-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 5.6 MB/s eta 0:00:00
+Downloading langchain_core-0.3.44-py3-none-any.whl (415 kB)
+Downloading langsmith-0.1.147-py3-none-any.whl (311 kB)
+Downloading numpy-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.1/16.1 MB 5.1 MB/s eta 0:00:00
+Downloading openai-1.66.3-py3-none-any.whl (567 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 567.4/567.4 kB 3.7 MB/s eta 0:00:00
+Using cached openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+Downloading opentelemetry_api-1.31.0-py3-none-any.whl (65 kB)
+Downloading opentelemetry_exporter_otlp_proto_http-1.31.0-py3-none-any.whl (17 kB)
+Downloading opentelemetry_exporter_otlp_proto_common-1.31.0-py3-none-any.whl (18 kB)
+Downloading opentelemetry_proto-1.31.0-py3-none-any.whl (55 kB)
+Downloading opentelemetry_sdk-1.31.0-py3-none-any.whl (118 kB)
+Downloading opentelemetry_semantic_conventions-0.52b0-py3-none-any.whl (183 kB)
+Downloading pdfplumber-0.11.5-py3-none-any.whl (59 kB)
+Downloading pdfminer.six-20231228-py3-none-any.whl (5.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 5.2 MB/s eta 0:00:00
+Downloading pydantic-2.10.6-py3-none-any.whl (431 kB)
+Downloading pydantic_core-2.27.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 4.7 MB/s eta 0:00:00
+Downloading pydantic_settings-2.8.1-py3-none-any.whl (30 kB)
+Downloading pyright-1.1.396-py3-none-any.whl (5.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 5.0 MB/s eta 0:00:00
+Using cached python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+Downloading pytube-15.0.0-py3-none-any.whl (57 kB)
+Downloading pyvis-0.3.2-py3-none-any.whl (756 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 756.0/756.0 kB 6.0 MB/s eta 0:00:00
+Downloading regex-2024.11.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (796 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 796.9/796.9 kB 4.8 MB/s eta 0:00:00
+Downloading sqlalchemy-2.0.39-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 4.3 MB/s eta 0:00:00
+Downloading tenacity-9.0.0-py3-none-any.whl (28 kB)
+Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+Downloading uv-0.6.6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.2/16.2 MB 5.0 MB/s eta 0:00:00
+Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+Downloading alembic-1.15.1-py3-none-any.whl (231 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading bcrypt-4.3.0-cp39-abi3-manylinux_2_34_x86_64.whl (284 kB)
+Downloading build-1.2.2.post1-py3-none-any.whl (22 kB)
+Downloading cohere-5.14.0-py3-none-any.whl (253 kB)
+Downloading cryptography-44.0.2-cp39-abi3-manylinux_2_34_x86_64.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 7.4 MB/s eta 0:00:00
+Downloading Deprecated-1.2.18-py2.py3-none-any.whl (10.0 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading docstring_parser-0.16-py3-none-any.whl (36 kB)
+Using cached fastapi-0.115.11-py3-none-any.whl (94 kB)
+Downloading frozenlist-1.5.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (283 kB)
+Downloading google_cloud_aiplatform-1.84.0-py2.py3-none-any.whl (7.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.3/7.3 MB 5.3 MB/s eta 0:00:00
+Downloading googleapis_common_protos-1.69.1-py2.py3-none-any.whl (293 kB)
+Downloading gptcache-0.1.44-py3-none-any.whl (131 kB)
+Downloading greenlet-3.1.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (613 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 613.1/613.1 kB 3.1 MB/s eta 0:00:00
+Downloading grpcio-1.71.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.9/5.9 MB 5.2 MB/s eta 0:00:00
+Downloading httpx-0.27.2-py3-none-any.whl (76 kB)
+Using cached jiter-0.8.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (345 kB)
+Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading jsonpickle-4.0.2-py3-none-any.whl (46 kB)
+Downloading kubernetes-32.0.1-py2.py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 4.1 MB/s eta 0:00:00
+Downloading langchain_cohere-0.3.5-py3-none-any.whl (45 kB)
+Downloading langchain_openai-0.2.14-py3-none-any.whl (50 kB)
+Using cached langchain_text_splitters-0.3.6-py3-none-any.whl (31 kB)
+Downloading marshmallow-3.26.1-py3-none-any.whl (50 kB)
+Downloading mem0ai-0.1.67-py3-none-any.whl (106 kB)
+Downloading mmh3-5.1.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (101 kB)
+Downloading multidict-6.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (131 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 9.0 MB/s eta 0:00:00
+Downloading nodeenv-1.9.1-py2.py3-none-any.whl (22 kB)
+Downloading onnxruntime-1.21.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.0/16.0 MB 4.7 MB/s eta 0:00:00
+Downloading opentelemetry_exporter_otlp_proto_grpc-1.31.0-py3-none-any.whl (18 kB)
+Downloading opentelemetry_instrumentation_fastapi-0.52b0-py3-none-any.whl (12 kB)
+Downloading opentelemetry_instrumentation-0.52b0-py3-none-any.whl (31 kB)
+Downloading opentelemetry_instrumentation_asgi-0.52b0-py3-none-any.whl (16 kB)
+Downloading opentelemetry_util_http-0.52b0-py3-none-any.whl (7.3 kB)
+Downloading orjson-3.10.15-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (130 kB)
+Downloading pillow-11.1.0-cp312-cp312-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 5.9 MB/s eta 0:00:00
+Downloading posthog-3.19.1-py2.py3-none-any.whl (77 kB)
+Downloading propcache-0.3.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (243 kB)
+Downloading pyarrow-19.0.1-cp312-cp312-manylinux_2_28_x86_64.whl (42.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 MB 4.7 MB/s eta 0:00:00
+Downloading PyJWT-2.10.1-py3-none-any.whl (22 kB)
+Downloading pylance-0.24.1-cp39-abi3-manylinux_2_28_x86_64.whl (36.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.8/36.8 MB 4.9 MB/s eta 0:00:00
+Downloading pypdf-5.3.1-py3-none-any.whl (302 kB)
+Downloading pypdfium2-4.30.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 9.8 MB/s eta 0:00:00
+Downloading pysbd-0.3.4-py3-none-any.whl (71 kB)
+Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+Downloading schema-0.7.7-py2.py3-none-any.whl (18 kB)
+Downloading tiktoken-0.7.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 10.3 MB/s eta 0:00:00
+Downloading tokenizers-0.20.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 2.6 MB/s eta 0:00:00
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached typer-0.15.2-py3-none-any.whl (45 kB)
+Using cached typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Using cached uvicorn-0.34.0-py3-none-any.whl (62 kB)
+Downloading yarl-1.18.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (336 kB)
+Downloading deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+Using cached et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Downloading durationpy-0.9-py3-none-any.whl (3.5 kB)
+Using cached fastavro-1.10.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+Downloading google_api_core-2.24.2-py3-none-any.whl (160 kB)
+Downloading google_auth-2.38.0-py2.py3-none-any.whl (210 kB)
+Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+Downloading google_cloud_bigquery-3.30.0-py2.py3-none-any.whl (247 kB)
+Downloading google_cloud_resource_manager-1.14.1-py2.py3-none-any.whl (392 kB)
+Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl (131 kB)
+Downloading httptools-0.6.4-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (510 kB)
+Downloading huggingface_hub-0.29.3-py3-none-any.whl (468 kB)
+Downloading langchain_experimental-0.3.4-py3-none-any.whl (209 kB)
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+Using cached mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 5.8 MB/s eta 0:00:00
+Downloading proto_plus-1.26.1-py3-none-any.whl (50 kB)
+Downloading protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+Downloading psycopg2_binary-2.9.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 6.0 MB/s eta 0:00:00
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading qdrant_client-1.13.3-py3-none-any.whl (306 kB)
+Downloading shapely-2.0.7-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 4.9 MB/s eta 0:00:00
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached starlette-0.46.1-py3-none-any.whl (71 kB)
+Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Downloading types_requests-2.32.0.20250306-py3-none-any.whl (20 kB)
+Downloading uvloop-0.21.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 5.4 MB/s eta 0:00:00
+Downloading watchfiles-1.0.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (452 kB)
+Using cached websockets-15.0.1-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (182 kB)
+Downloading wrapt-1.17.2-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (89 kB)
+Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+Downloading flatbuffers-25.2.10-py2.py3-none-any.whl (30 kB)
+Downloading Mako-1.3.9-py3-none-any.whl (78 kB)
+Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Downloading sympy-1.13.3-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 4.8 MB/s eta 0:00:00
+Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
+Downloading fsspec-2025.3.0-py3-none-any.whl (193 kB)
+Downloading google_cloud_core-2.4.3-py2.py3-none-any.whl (29 kB)
+Downloading google_crc32c-1.6.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (32 kB)
+Downloading google_resumable_media-2.7.2-py2.py3-none-any.whl (81 kB)
+Downloading grpc_google_iam_v1-0.14.1-py2.py3-none-any.whl (19 kB)
+Downloading grpcio_status-1.71.0-py3-none-any.whl (14 kB)
+Downloading grpcio_tools-1.71.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 5.4 MB/s eta 0:00:00
+Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 5.0 MB/s eta 0:00:00
+Downloading portalocker-2.10.1-py3-none-any.whl (18 kB)
+Downloading pyasn1_modules-0.4.1-py3-none-any.whl (181 kB)
+Using cached rsa-4.9-py3-none-any.whl (34 kB)
+Downloading tzdata-2025.1-py2.py3-none-any.whl (346 kB)
+Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Building wheels for collected packages: pypika
+  Building wheel for pypika (pyproject.toml): started
+  Building wheel for pypika (pyproject.toml): finished with status 'done'
+  Created wheel for pypika: filename=pypika-0.48.9-py2.py3-none-any.whl size=53769 sha256=56bbfde8675a7f1a3b3d450394d66b96ed1381fc0be73f43badb2129545f1d15
+  Stored in directory: /home/ashish/.cache/pip/wheels/d5/3d/69/8d68d249cd3de2584f226e27fd431d6344f7d70fd856ebd01b
+Successfully built pypika
+Installing collected packages: schema, pytz, pypika, mpmath, monotonic, flatbuffers, durationpy, appdirs, wrapt, websockets, uvloop, uv, tzdata, types-requests, tqdm, tomli-w, tenacity, tabulate, sympy, shellingham, regex, pytube, python-dotenv, pysbd, pyproject_hooks, pypdfium2, pypdf, pyjwt, pydantic-core, pyasn1, pyarrow, psycopg2-binary, protobuf, propcache, portalocker, Pillow, orjson, opentelemetry-util-http, oauthlib, numpy, nodeenv, networkx, mypy-extensions, multidict, mmh3, mdurl, marshmallow, Mako, jsonref, jsonpickle, jsonpatch, json-repair, jiter, humanfriendly, httpx-sse, httptools, grpcio, greenlet, google-crc32c, fsspec, frozenlist, filelock, fastavro, et-xmlfile, docstring-parser, distro, deprecation, click, cachetools, blinker, bcrypt, backoff, asgiref, annotated-types, aiohappyeyeballs, yarl, watchfiles, uvicorn, typing-inspect, tiktoken, starlette, SQLAlchemy, shapely, rsa, requests-toolbelt, requests-oauthlib, pyright, pylance, pydantic, pyasn1-modules, proto-plus, posthog, pandas, opentelemetry-proto, openpyxl, markdown-it-py, huggingface-hub, httpx, grpcio-tools, gptcache, googleapis-common-protos, google-resumable-media, docker, deprecated, cryptography, coloredlogs, chroma-hnswlib, build, aiosignal, tokenizers, rich, pyvis, pydantic-settings, pdfminer.six, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, openai, onnxruntime, langsmith, lancedb, grpcio-status, google-auth, fastapi, dataclasses-json, alembic, aiohttp, typer, qdrant-client, pdfplumber, opentelemetry-semantic-conventions, litellm, langchain-core, kubernetes, grpc-google-iam-v1, google-api-core, cohere, auth0-python, opentelemetry-sdk, opentelemetry-instrumentation, mem0ai, langchain-text-splitters, langchain-openai, instructor, google-cloud-core, opentelemetry-instrumentation-asgi, opentelemetry-exporter-otlp-proto-http, opentelemetry-exporter-otlp-proto-grpc, langchain, google-cloud-storage, google-cloud-resource-manager, google-cloud-bigquery, opentelemetry-instrumentation-fastapi, langchain_community, google-cloud-aiplatform, langchain-experimental, chromadb, langchain-cohere, crewai, embedchain, crewai_tools
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2025.1
+    Uninstalling pytz-2025.1:
+      Successfully uninstalled pytz-2025.1
+  Attempting uninstall: httpx
+    Found existing installation: httpx 0.28.1
+    Uninstalling httpx-0.28.1:
+      Successfully uninstalled httpx-0.28.1
+Successfully installed Mako-1.3.9 Pillow-11.1.0 SQLAlchemy-2.0.39 aiohappyeyeballs-2.6.1 aiohttp-3.11.13 aiosignal-1.3.2 alembic-1.15.1 annotated-types-0.7.0 appdirs-1.4.4 asgiref-3.8.1 auth0-python-4.8.1 backoff-2.2.1 bcrypt-4.3.0 blinker-1.9.0 build-1.2.2.post1 cachetools-5.5.2 chroma-hnswlib-0.7.6 chromadb-0.5.23 click-8.1.8 cohere-5.14.0 coloredlogs-15.0.1 crewai-0.105.0 crewai_tools-0.37.0 cryptography-44.0.2 dataclasses-json-0.6.7 deprecated-1.2.18 deprecation-2.1.0 distro-1.9.0 docker-7.1.0 docstring-parser-0.16 durationpy-0.9 embedchain-0.1.127 et-xmlfile-2.0.0 fastapi-0.115.11 fastavro-1.10.0 filelock-3.17.0 flatbuffers-25.2.10 frozenlist-1.5.0 fsspec-2025.3.0 google-api-core-2.24.2 google-auth-2.38.0 google-cloud-aiplatform-1.84.0 google-cloud-bigquery-3.30.0 google-cloud-core-2.4.3 google-cloud-resource-manager-1.14.1 google-cloud-storage-2.19.0 google-crc32c-1.6.0 google-resumable-media-2.7.2 googleapis-common-protos-1.69.1 gptcache-0.1.44 greenlet-3.1.1 grpc-google-iam-v1-0.14.1 grpcio-1.71.0 grpcio-status-1.71.0 grpcio-tools-1.71.0 httptools-0.6.4 httpx-0.27.2 httpx-sse-0.4.0 huggingface-hub-0.29.3 humanfriendly-10.0 instructor-1.7.4 jiter-0.8.2 json-repair-0.39.1 jsonpatch-1.33 jsonpickle-4.0.2 jsonref-1.1.0 kubernetes-32.0.1 lancedb-0.21.1 langchain-0.3.20 langchain-cohere-0.3.5 langchain-core-0.3.44 langchain-experimental-0.3.4 langchain-openai-0.2.14 langchain-text-splitters-0.3.6 langchain_community-0.3.19 langsmith-0.1.147 litellm-1.60.2 markdown-it-py-3.0.0 marshmallow-3.26.1 mdurl-0.1.2 mem0ai-0.1.67 mmh3-5.1.0 monotonic-1.6 mpmath-1.3.0 multidict-6.1.0 mypy-extensions-1.0.0 networkx-3.4.2 nodeenv-1.9.1 numpy-2.2.3 oauthlib-3.2.2 onnxruntime-1.21.0 openai-1.66.3 openpyxl-3.1.5 opentelemetry-api-1.31.0 opentelemetry-exporter-otlp-proto-common-1.31.0 opentelemetry-exporter-otlp-proto-grpc-1.31.0 opentelemetry-exporter-otlp-proto-http-1.31.0 opentelemetry-instrumentation-0.52b0 opentelemetry-instrumentation-asgi-0.52b0 opentelemetry-instrumentation-fastapi-0.52b0 opentelemetry-proto-1.31.0 opentelemetry-sdk-1.31.0 opentelemetry-semantic-conventions-0.52b0 opentelemetry-util-http-0.52b0 orjson-3.10.15 pandas-2.2.3 pdfminer.six-20231228 pdfplumber-0.11.5 portalocker-2.10.1 posthog-3.19.1 propcache-0.3.0 proto-plus-1.26.1 protobuf-5.29.3 psycopg2-binary-2.9.10 pyarrow-19.0.1 pyasn1-0.6.1 pyasn1-modules-0.4.1 pydantic-2.10.6 pydantic-core-2.27.2 pydantic-settings-2.8.1 pyjwt-2.10.1 pylance-0.24.1 pypdf-5.3.1 pypdfium2-4.30.1 pypika-0.48.9 pyproject_hooks-1.2.0 pyright-1.1.396 pysbd-0.3.4 python-dotenv-1.0.1 pytube-15.0.0 pytz-2024.2 pyvis-0.3.2 qdrant-client-1.13.3 regex-2024.11.6 requests-oauthlib-2.0.0 requests-toolbelt-1.0.0 rich-13.9.4 rsa-4.9 schema-0.7.7 shapely-2.0.7 shellingham-1.5.4 starlette-0.46.1 sympy-1.13.3 tabulate-0.9.0 tenacity-9.0.0 tiktoken-0.7.0 tokenizers-0.20.3 tomli-w-1.2.0 tqdm-4.67.1 typer-0.15.2 types-requests-2.32.0.20250306 typing-inspect-0.9.0 tzdata-2025.1 uv-0.6.6 uvicorn-0.34.0 uvloop-0.21.0 watchfiles-1.0.4 websockets-15.0.1 wrapt-1.17.2 yarl-1.18.3
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate crewai_2025
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+<hr>
+<br>
+
+(base) ashish@ashish-ThinkPad-T440s:~/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI$ conda activate crewai_2025
+(crewai_2025) ashish@ashish-ThinkPad-T440s:~/Desktop/ws/gh/public_workspace/generative_ai_workspace_2024_04_05/7A_environment setup for crewAI$ python -m ipykernel install --user --name crewai_2025
+Installed kernelspec crewai_2025 in /home/ashish/.local/share/jupyter/kernels/crewai_2025
+</pre>

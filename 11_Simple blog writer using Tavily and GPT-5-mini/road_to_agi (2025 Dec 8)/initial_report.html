@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Where We Stand on AGI: Latest Developments, Numbers, and Open Questions</title>
+</head>
+<body>
+  <h1>Where We Stand on AGI: Latest Developments, Numbers, and Open Questions</h1>
+
+  <p>Artificial General Intelligence (AGI) — a machine that can think and learn across many domains like a human — is a hot topic. Different experts disagree about when (or if) it will arrive. Below I summarize the latest developments from recent reports and articles, explain the main technical bottlenecks, and give you the key numbers and arguments so you can see why timelines range from "within a few years" to "decades away." I keep this friendly for high‑school and early college students.</p>
+
+  <h2>Quick snapshot of major recent headlines</h2>
+  <ul>
+    <li>OpenAI released GPT-5 (announced Aug 7, 2025) — presented as a big step up in reasoning, coding and multimodal support.</li>
+    <li>Benchmarks and expert studies place current top models roughly “halfway” to some formal AGI definitions: one framework scored GPT-4 at 27% and GPT-5 at 57% toward an AGI threshold.</li>
+    <li>Some industry/academic reports and panels (e.g., an MIT/Arm deep dive) warn AGI-like systems might show up as early as 2026; others and many surveys keep median predictions later (2040–2060 ranges).</li>
+    <li>Policy and geopolitics matter: RAND (Dec 1, 2025) models the US–China AGI race as a prisoner’s dilemma — incentives favor speed unless international coordination and verification improve.</li>
+  </ul>
+
+  <h2>How close are models? Numbers you should remember</h2>
+  <p>People are trying to measure AGI with concrete tests. Here are some of the hard numbers from recent analyses and benchmarks:</p>
+  <ul>
+    <li>One ten-ability AGI framework (inspired by human intelligence theory) gave GPT-4 a 27% score and GPT-5 a 57% score.</li>
+    <li>On SPACE (visual reasoning subset): GPT-4o scored 43.8%; internal tests reported GPT-5 (Aug 2025) at 70.8% while humans average 88.9%.</li>
+    <li>On MindCube (spatial/working‑memory tests): GPT-4o = 38.8%, GPT-5 = 59.7% (still below human average).</li>
+    <li>SimpleQA (a test for hallucination/accuracy): GPT-5 reportedly hallucinated in response to over 30% of questions; some models (e.g., Anthropic’s Claude variants) hallucinate much less.</li>
+    <li>Self‑improvement endurance: METR’s test of GPT‑5.1‑Codex‑Max showed sustained autonomous task performance around 2 hours 42 minutes — a large jump from GPT‑4’s few minutes on similar tests.</li>
+    <li>DeepMind’s Gemini (in “Deep Think” mode) scored gold at the 2025 International Mathematical Olympiad by solving 5 of 6 problems within the 4.5‑hour window — a sign of strong formal reasoning in controlled tasks.</li>
+  </ul>
+
+  <h2>Where models still struggle (the real bottlenecks)</h2>
+  <p>Researchers point to a few consistent gaps that stop today's systems from being “general” in the human sense:</p>
+  <ul>
+    <li><strong>Continual learning / long‑term memory storage:</strong> Current models are usually frozen after training and don’t reliably learn from new interactions over weeks or months. Authors call this the single most uncertain remaining obstacle — it likely needs a breakthrough in how models update or store durable knowledge.</li>
+    <li><strong>Multimodal perception (especially vision):</strong> Models are getting far better with text and math, but visual induction, world modeling (understanding physical plausibility), and some types of visual working memory lag behind humans.</li>
+    <li><strong>Hallucinations / reliable retrieval:</strong> Many models confidently give wrong answers; reducing this is an active area and some models differ substantially in error rates.</li>
+    <li><strong>Speed and real‑world tool use:</strong> Models are superfast in text but can be slower when perception or low‑latency actions are needed.</li>
+  </ul>
+
+  <h2>How researchers think we’ll get from here to AGI</h2>
+  <p>There are two broad camps:</p>
+  <ol>
+    <li><strong>Scale current methods:</strong> Some labs argue that scaling transformers, more compute and better data will push capabilities to AGI. Historically compute used to train big models grew roughly 4–5× per year (earlier bursts were as high as 9×/year until mid‑2020).</li>
+    <li><strong>New architectures or breakthroughs:</strong> Others (e.g., Yann LeCun, Richard Sutton) say scaling won’t be enough — we’ll need new ideas (e.g., better world models, memory architectures, or robotics integration).</li>
+  </ol>
+  <p>Compute projections vary: one analysis (Epoch AI) suggested training budgets up to ~2e29 FLOPs are feasible by 2030 under some assumptions; other upper bounds in reports ranged up to ~3e31 FLOPs depending on power, chip production and data limits.</p>
+
+  <h2>Timelines: why predictions disagree so much</h2>
+  <p>Different groups pick different metrics and weights. Surveys of thousands of experts show median guesses spanning decades (many 50%‑probability dates around 2040–2060), while some entrepreneurs and narrowly framed AGI definitions yield much earlier numbers (for example, one set of authors estimated a 50% chance by end‑2028 and 80% by end‑2030 under their framework).</p>
+  <p>Some industry reports (e.g., MIT/Arm) even highlight that a minority of experts think AGI could appear as soon as 2026 — overall, the spread is wide because of differences in definitions and which bottlenecks each person thinks are tractable.</p>
+
+  <h2>Risks, governance and geopolitics</h2>
+  <p>Progress isn’t just technical. There are lots of policy and safety questions:</p>
+  <ul>
+    <li>Geopolitics: RAND models the US–China race as a prisoner’s dilemma where both sides keep pushing acceleration unless credible verification and common risk judgments emerge.</li>
+    <li>Security risks: papers warn of misuse (e.g., biological risk from expert-level virology outputs), espionage, and supply‑chain issues (chip export controls like H20/GPU debates matter).</li>
+    <li>Safety strategies: researchers propose technical assurance, transparency, and even deterrence ideas (like "Mutually Assured AI Malfunction") — but these raise hard observability and verification problems.</li>
+    <li>Ethics and law: debates about openness, liability, and whether to keep powerful models behind paywalls are active and unresolved.</li>
+  </ul>
+
+  <h2>Bottom line for students</h2>
+  <p>We’re seeing rapid, measurable progress: top models now match or beat humans in many narrow tasks, have much larger memory windows, and can sustain autonomous code‑writing for hours. But they still miss key things humans do easily — durable long‑term learning, consistent visual world modeling, and trustworthy truthfulness.</p>
+  <p>Timelines are uncertain because they depend on whether the remaining gaps are solved by "business‑as‑usual" engineering, a single useful breakthrough (e.g., workable continual learning), or entirely new approaches. Meanwhile, policy and safety work is racing to catch up with technical progress.</p>
+
+  <p>If you’re curious, keep an eye on benchmark numbers (AGI‑score frameworks, SPACE, IntPhys, MindCube, SimpleQA), compute growth reports, major model releases (GPT‑5 and beyond), and policy studies like RAND’s — they tell the clearest stories about how close AGI really is.</p>
+</body>
+</html>

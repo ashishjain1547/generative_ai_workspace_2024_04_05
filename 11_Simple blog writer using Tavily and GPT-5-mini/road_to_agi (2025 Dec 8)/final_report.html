@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Where We Stand on AGI: Latest Developments, Numbers, and Open Questions</title>
+</head>
+<body>
+  <h1>Where We Stand on AGI: Latest Developments, Numbers, and Open Questions</h1>
+  <p><strong>Author:</strong> Compiled summary (anonymous) · <strong>Date:</strong> December 2025 · <strong>Version:</strong> 2025-12-01</p>
+
+  <h2>Executive summary (one line)</h2>
+  <p>Top models have made rapid, measurable gains (e.g., GPT‑5 reported around 50–70% on several AGI-oriented benchmarks), but persistent, hard-to-solve gaps — especially durable continual learning, robust multimodal world models, and reliable truthfulness — mean credible AGI timelines still range from a few years (for narrow definitions) to several decades (for robust human‑level generality). Numbers below are reported by labs and studies; where results come from internal tests or single groups I flag them as provisional.</p>
+
+  <h2>Quick snapshot of major recent headlines</h2>
+  <ul>
+    <li>OpenAI released GPT‑5 (announced Aug 7, 2025) — presented as a notable step up in reasoning, coding and multimodal support (press release and model paper reported improvements).</li>
+    <li>Benchmarks and expert studies place current top models roughly “halfway” to some formal AGI definitions: a ten‑ability AGI framework reported GPT‑4 at 27% and GPT‑5 at 57% toward its chosen AGI threshold (framework authors’ reported scores).</li>
+    <li>Some industry/academic reports and panels (for example, an MIT/Arm deep dive) warn AGI‑like systems might appear as early as 2026; other expert surveys keep median predictions later (many 50%‑probability dates clustered around 2040–2060).</li>
+    <li>Policy and geopolitics matter: RAND (modeling reported Dec 1, 2025) frames the US–China AGI race as a prisoner’s dilemma — incentives favor speed absent stronger international coordination and verification.</li>
+  </ul>
+
+  <h2>Methods and definitions (short)</h2>
+  <p><strong>What “AGI score” means here:</strong> the draft uses several benchmarking frameworks that combine multiple task categories (reasoning, planning, perception, memory, tool use). Each framework weights abilities differently and maps aggregate performance to a 0–100% scale relative to an internal "AGI threshold" chosen by its authors. These mappings are normative — not universally agreed — so percentages should be read as framework‑specific progress indicators, not absolute measures of human‑level general intelligence.</p>
+  <p><strong>Provenance notes:</strong> I flag results as (a) published/peer‑reviewed, (b) public benchmark results, or (c) reported/internal tests by labs. Where items are internal or single‑lab reports they are provisional and should be independently verified before being used as firm evidence.</p>
+
+  <h2>Benchmarks and headline numbers (compact table)</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <th>Benchmark</th><th>What it measures</th><th>Model / Score</th><th>Human baseline / Notes</th><th>Source type</th>
+    </tr>
+    <tr>
+      <td>Ten‑ability AGI framework</td>
+      <td>Aggregate across ~10 cognitive abilities</td>
+      <td>GPT‑4: 27% · GPT‑5: 57%</td>
+      <td>Framework‑specific AGI threshold (authors' mapping)</td>
+      <td>Reported framework scores (authors)</td>
+    </tr>
+    <tr>
+      <td>SPACE (visual reasoning subset)</td>
+      <td>Visual reasoning tasks (subset)</td>
+      <td>GPT‑4o: 43.8% · GPT‑5 (Aug 2025): 70.8%</td>
+      <td>Human average: 88.9%</td>
+      <td>Internal/public benchmark reports (reported)</td>
+    </tr>
+    <tr>
+      <td>MindCube</td>
+      <td>Spatial / working‑memory tests</td>
+      <td>GPT‑4o: 38.8% · GPT‑5: 59.7%</td>
+      <td>Still below typical human average</td>
+      <td>Benchmark reports (reported)</td>
+    </tr>
+    <tr>
+      <td>SimpleQA</td>
+      <td>Hallucination / factual accuracy</td>
+      <td>GPT‑5: hallucinations in >30% of questions (reported)</td>
+      <td>Some other models (e.g., Anthropic Claude variants) report lower hallucination rates</td>
+      <td>Reported / model vendor comparisons</td>
+    </tr>
+    <tr>
+      <td>METR endurance test</td>
+      <td>Sustained autonomous task performance</td>
+      <td>GPT‑5.1‑Codex‑Max: ~2 hours 42 minutes · GPT‑4: few minutes</td>
+      <td>Measures autonomous chaining and robustness over time</td>
+      <td>Internal lab test (provisional)</td>
+    </tr>
+    <tr>
+      <td>IMO 2025 (DeepMind Gemini, "Deep Think" mode)</td>
+      <td>Formal math problem solving under contest constraints</td>
+      <td>Solved 5 of 6 problems within 4.5 hours (gold‑level performance reported)</td>
+      <td>Shows strong formal reasoning in a constrained task</td>
+      <td>Reported by DeepMind (lab result)</td>
+    </tr>
+  </table>
+
+  <h2>Where models still struggle (the real bottlenecks)</h2>
+  <ul>
+    <li><strong>Continual learning / long‑term memory:</strong> Most models remain effectively "frozen" after training; reliably updating and storing durable knowledge over weeks/months remains unsolved and is widely cited as a high‑uncertainty obstacle.</li>
+    <li><strong>Multimodal perception (vision & world models):</strong> Text and math abilities have improved faster than visual induction and physical‑world modeling; visual working memory and physical plausibility judgments still lag humans.</li>
+    <li><strong>Hallucinations and reliable retrieval:</strong> High‑confidence errors persist (SimpleQA >30% hallucination reported for GPT‑5 in one test); different model families show substantial variance.</li>
+    <li><strong>Low‑latency tool use & situated action:</strong> Language is fast; perception‑action loops and real‑world tool use (robotics) remain harder and slower.</li>
+  </ul>
+
+  <h2>How researchers think we’ll get from here to AGI</h2>
+  <p>Two broad routes dominate discussion:</p>
+  <ol>
+    <li><strong>Scale current methods:</strong> Proponents argue more parameters, compute and better data will continue yielding returns. Historical training‑compute growth averaged ~4–5×/year (with earlier bursts up to ~9×/year until mid‑2020).</li>
+    <li><strong>New architectures / breakthroughs:</strong> Others (e.g., prominent ML researchers) argue scaling alone won’t close key gaps and that innovations (robust world models, persistent memory systems, tighter robotics integration) are needed.</li>
+  </ol>
+  <p>Compute projections vary: one analysis (Epoch AI) suggested training budgets up to ~2×10^29 FLOPs could be feasible by 2030 under optimistic assumptions; other reports place upper bounds near ~3×10^31 FLOPs depending on power and chip production assumptions.</p>
+
+  <h2>Timelines: why predictions disagree</h2>
+  <p>Different metrics, definitions and confidence levels drive wide disagreement. Aggregated expert surveys show medians often in the 2040–2060 range, while some narrow frameworks and industry estimates give earlier dates (one internal framework estimated 50% by end‑2028 and 80% by end‑2030 under its assumptions). A minority of experts and some industry reports have suggested AGI‑like capabilities could appear as early as 2026. When using these numbers, note the underlying definition of AGI, which benchmark(s) are weighted most heavily, and whether the estimate is conditional on continued scaling or a specific breakthrough.</p>
+
+  <h2>Risks, governance and geopolitics</h2>
+  <ul>
+    <li><strong>Geopolitics:</strong> RAND models (Dec 1, 2025 reporting) show a prisoner’s dilemma: nations face incentives to accelerate unless international verification and shared risk assessments improve.</li>
+    <li><strong>Security risks:</strong> Reports warn of misuse (e.g., advances in bio‑expertise outputs), espionage, and supply‑chain chokepoints (chip export controls and debates around GPU access matter for pace of progress).</li>
+    <li><strong>Safety strategies:</strong> Proposals range from technical assurance and transparency to verification regimes and deterrence ideas; all face verification and observability challenges.</li>
+    <li><strong>Ethics and law:</strong> Active debates continue over openness, liability, and model access control (paywalls vs open releases).</li>
+  </ul>
+
+  <h2>Bottom line for students (and what to watch)</h2>
+  <p>Progress is real and measurable: top models now match or beat humans on many narrow tasks, have larger context windows, and can sustain autonomous code writing for hours in some internal tests. But key human‑like capacities — durable continual learning, reliable multimodal world models, and trustworthy factuality — remain outstanding. Timelines hinge on whether these gaps are closed by continued scaling, a single breakthrough (e.g., workable continual learning), or new architectures. Policy and safety research must accelerate in parallel.</p>
+  <p>Watch these signals: AGI‑score framework updates, SPACE / IntPhys / MindCube / SimpleQA benchmark results, compute growth analyses (e.g., Epoch AI), major model releases (GPT‑5 and successors), METR endurance reports, and policy studies like RAND’s — and when possible, prioritize independently reproducible benchmark results over single‑lab internal tests.</p>
+
+  <h2>References and sources (brief)</h2>
+  <ul>
+    <li>OpenAI GPT‑5 announcement — Aug 7, 2025 (model release/press materials; reported performance claims).</li>
+    <li>Ten‑ability AGI framework — authors’ reported scores for GPT‑4 (27%) and GPT‑5 (57%) (framework paper/report; framework‑specific mapping to AGI threshold).</li>
+    <li>SPACE visual reasoning subset results — reported GPT‑4o 43.8%, GPT‑5 (Aug 2025) 70.8%, human avg 88.9% (benchmark report / lab release; flagged as reported/internal where applicable).</li>
+    <li>MindCube spatial/working‑memory benchmark — reported GPT‑4o 38.8%, GPT‑5 59.7% (benchmark report).</li>
+    <li>SimpleQA factuality/hallucination comparison — GPT‑5 reported >30% hallucination rate; other models (Anthropic Claude variants) report lower rates (vendor/benchmark reports).</li>
+    <li>METR endurance test — reported GPT‑5.1‑Codex‑Max sustained autonomous performance ~2 hours 42 minutes vs GPT‑4 few minutes (internal lab test; provisional).</li>
+    <li>DeepMind Gemini (’Deep Think’ mode) — reported solving 5 of 6 IMO 2025 problems within 4.5 hours (DeepMind report; task‑constrained result).</li>
+    <li>Epoch AI compute projection — suggested ~2×10^29 FLOPs feasible by 2030 under some assumptions; other reports give upper bounds up to ~3×10^31 FLOPs (compute projection studies).</li>
+    <li>RAND modeling of US–China race — reported Dec 1, 2025 (prisoner’s dilemma framing; policy analysis report).</li>
+    <li>Expert surveys and timeline aggregates — multiple surveys report medians often in 2040–2060 with notable variance (survey meta‑analyses / aggregated studies).</li>
+  </ul>
+
+  <p><em>Notes:</em> Where a result was described in the original draft as coming from “internal tests” or a single lab, I preserved the claim but flagged it above as provisional and recommended independent verification. For any use beyond classroom discussion, consult the original reports and benchmark datasets to confirm methodology, sample sizes, dates and reproducibility.</p>
+</body>
+</html>
