@@ -1,0 +1,91 @@
+used selenium and got this error:: '<html lang="en"><head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>Security Alert</title>\n<link rel="icon" href="https://assets-0.housingcdn.com/static/favicon1.png">\n<style>\n:root{--p:#5a189a;--l:#9d4edd;--s:#ffd60a}\n*{margin:0;padding:0;box-sizing:border-box}\nbody{font:16px -apple-system,sans-serif;background:#f8f9fa;color:#333}\n.c{max-width:800px;margin:auto;padding:0 20px}\nheader{background:linear-gradient(135deg,var(--p),var(--l));color:#fff;padding:15px 0;box-shadow:0 4px 10px #0002}\n.o{display:flex;align-items:center}\n.o img{height:36px}\n.d{background:#fff;border-radius:12px;box-shadow:0 8px 20px #0001;padding:20px;margin:20px 0;position:relative;transition:.3s}\n.d:hover{transform:translateY(-5px);box-shadow:0 12px 24px #0002}\n.a{border-left:4px solid var(--s)}\n.b{position:absolute;top:0;right:0;background:var(--s);color:var(--p);padding:5px 10px;font-size:.8rem;border-bottom-left-radius:8px}\nh2{color:var(--p);margin-bottom:15px;font-size:1.5rem;position:relative}\nh2:after{content:\'\';position:absolute;bottom:-5px;left:0;width:40px;height:3px;background:var(--s)}\n.r{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:6px;padding:12px;text-align:center;font-family:monospace;margin:15px 0}\n.t{background:var(--p);color:#fff;padding:8px 16px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:10px}\n.t:hover{background:var(--l)}\n.h{display:flex;align-items:center;margin:30px 0 15px}\n.h .n{flex:1;height:2px;background:linear-gradient(to right,var(--p),transparent);margin-left:15px}\n.hs{display:flex;gap:20px;flex-wrap:wrap}\n.hc{flex:1;min-width:260px}\nfooter{background:var(--p);color:#fff;text-align:center;padding:15px 0;font-size:.9rem}\nul{margin:10px 0 0 20px}\nli{margin-bottom:6px}\n@media(max-width:768px){.hs{flex-direction:column}}\n</style>\n</head>\n<body>\n<header><div class="c"><div class="o">\n<img src="https://assets-0.housingcdn.com/seller/images/logo-72b33703f043bbab94637cf6faab9fc1.png" alt="Housing.com">\n</div></div></header>\n<main class="c">\n<div class="d a">\n<div class="b">ALERT</div>\n<h2>Request Blocked</h2>\n<p>Our security system detected suspicious activity. Your request was temporarily blocked to protect users and system integrity. We apologize for any inconvenience.</p>\n</div>\n<div class="d">\n<h2>Block Reference ID</h2>\n<div class="r">0.4f3df17.1765288753.d17800b</div>\n<p>Save this ID when contacting support.</p>\n</div>\n<div class="h"><h2>Need Help?</h2><div class="n"></div></div>\n<div class="hs">\n<div class="d hc">\n<h2>Contact Support</h2>\n<p>If you believe this is an error, contact our support team with your Reference ID and details.</p>\n<a href="https://urldefense.com/v3/__https://support.housing.com/support/home__;!!GjvTz_vk!XJeGgLucbpw3n-w8t3O2fps4E7sNxaLAm3hf7QPBx3EGGeg61tRY-0-Qcp1FFSLEtj7mgPLq4KDqgjgI1DmqNbk$" class="t">Contact Support</a>\n</div>\n<div class="d hc">\n<h2>Common Causes</h2>\n<ul>\n<li>Unusual network activity</li>\n<li>Rapid browsing</li>\n<li>Use of bots or scrapers</li>\n<li>Suspicious VPNs/proxies</li>\n<li>Failed login attempts</li>\n<li>Accessing restricted areas</li>\n</ul>\n</div>\n</div>\n<div class="d">\n<h2>Next Steps</h2>\n<ul>\n<li>Wait a few minutes</li>\n<li>Clear cookies/cache</li>\n<li>Use another browser/device</li>\n<li>Disable extensions</li>\n<li>Disconnect VPN</li>\n</ul>\n</div>\n</main>\n<footer><div class="c">© 2025 Housing.com | Protecting our users</div></footer>\n\n\n</body></html>'
+
+-----------------------------------------------------
+
+<div class="markdown prose dark:prose-invert w-full break-words light markdown-new-styling"><p data-start="0" data-end="86">Right now nothing is “wrong” with your code – <strong data-start="46" data-end="84">the site is actively blocking you.</strong></p>
+<p data-start="88" data-end="233">That HTML is a <strong data-start="103" data-end="139">custom WAF / bot-protection page</strong> from Housing.com (“Request Blocked… Unusual network activity / Use of bots or scrapers”), so:</p>
+<ul data-start="235" data-end="367">
+<li data-start="235" data-end="274">
+<p data-start="237" data-end="274">Your Selenium browser reached the URL</p>
+</li>
+<li data-start="275" data-end="367">
+<p data-start="277" data-end="367">Instead of the real listing HTML, their security layer served this <strong data-start="344" data-end="362">Security Alert</strong> page</p>
+</li>
+</ul>
+<p data-start="369" data-end="372">So:</p>
+<ul data-start="374" data-end="479">
+<li data-start="374" data-end="409">
+<p data-start="376" data-end="409">With <code data-start="381" data-end="391">requests</code> → you got <strong data-start="402" data-end="409">406</strong></p>
+</li>
+<li data-start="410" data-end="479">
+<p data-start="412" data-end="479">With Selenium → you get <strong data-start="436" data-end="443">200</strong>, but the body is the <em data-start="465" data-end="474">blocked</em> page</p>
+</li>
+</ul>
+<p data-start="481" data-end="557">This isn’t a parsing bug, it’s <strong data-start="512" data-end="556">rate-limiting / anti-scraping protection</strong>.</p>
+<hr data-start="559" data-end="562">
+<h3 data-start="564" data-end="598">What can you realistically do?</h3>
+<p data-start="600" data-end="802">Because of safety and legal reasons I shouldn’t help you bypass someone’s security mechanisms in a targeted way (e.g., tricks to defeat anti-bot systems). But here’s what you <em data-start="775" data-end="780">can</em> do <strong data-start="784" data-end="801">within bounds</strong>:</p>
+<ol data-start="804" data-end="1479">
+<li data-start="804" data-end="970">
+<p data-start="807" data-end="844"><strong data-start="807" data-end="844">Check whether scraping is allowed</strong></p>
+<ul data-start="848" data-end="970">
+<li data-start="848" data-end="898">
+<p data-start="850" data-end="898">Read their <strong data-start="861" data-end="877">Terms of Use</strong> and <strong data-start="882" data-end="896">robots.txt</strong></p>
+</li>
+<li data-start="902" data-end="970">
+<p data-start="904" data-end="970">If they forbid automated access, you should not continue scraping.</p>
+</li>
+</ul>
+</li>
+<li data-start="972" data-end="1167">
+<p data-start="975" data-end="1042"><strong data-start="975" data-end="1042">If you have a legitimate use case, ask for an API / data export</strong></p>
+<ul data-start="1046" data-end="1167">
+<li data-start="1046" data-end="1167">
+<p data-start="1048" data-end="1083">Many real-estate platforms provide:</p>
+<ul data-start="1089" data-end="1167">
+<li data-start="1089" data-end="1103">
+<p data-start="1091" data-end="1103">Partner APIs</p>
+</li>
+<li data-start="1109" data-end="1125">
+<p data-start="1111" data-end="1125">CSV/JSON feeds</p>
+</li>
+<li data-start="1131" data-end="1167">
+<p data-start="1133" data-end="1167">Or can share data under a contract</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-start="1169" data-end="1335">
+<p data-start="1172" data-end="1242"><strong data-start="1172" data-end="1212">If you’re just learning web scraping</strong>, switch to a friendlier site:</p>
+<ul data-start="1246" data-end="1335">
+<li data-start="1246" data-end="1284">
+<p data-start="1248" data-end="1284">Sites without heavy bot protection</p>
+</li>
+<li data-start="1288" data-end="1335">
+<p data-start="1290" data-end="1335">Public datasets, demo pages, docs sites, etc.</p>
+</li>
+</ul>
+</li>
+<li data-start="1337" data-end="1479">
+<p data-start="1340" data-end="1406"><strong data-start="1340" data-end="1380">If you absolutely must use this data</strong>, the only clean route is:</p>
+<ul data-start="1410" data-end="1479">
+<li data-start="1410" data-end="1479">
+<p data-start="1412" data-end="1479">Get explicit permission + official access channel from Housing.com.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr data-start="1481" data-end="1484">
+<p data-start="1486" data-end="1625">If you tell me <strong data-start="1501" data-end="1546">what information you’re trying to collect</strong> (e.g., “price, bedrooms, location for top N listings”), I can help you design:</p>
+<ul data-start="1627" data-end="1790" data-is-last-node="" data-is-only-node="">
+<li data-start="1627" data-end="1652">
+<p data-start="1629" data-end="1652">A schema for the data</p>
+</li>
+<li data-start="1653" data-end="1705">
+<p data-start="1655" data-end="1705">Example scraping logic on a more permissive site</p>
+</li>
+<li data-start="1706" data-end="1790" data-is-last-node="">
+<p data-start="1708" data-end="1790" data-is-last-node="">Or a pipeline that could later be pointed to an official API if they give you one.</p>
+</li>
+</ul></div>

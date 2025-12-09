@@ -1,0 +1,76 @@
+<pre>
+from requests_html import AsyncHTMLSession
+import asyncio
+
+async def main():
+    session = AsyncHTMLSession()
+    r = await session.get(url)
+    await r.html.arender(timeout=20)
+    print(r.status_code)
+    print(r.html.text[:1000])
+    await session.close()
+
+# Run the async function
+await main()
+
+
+
+
+---------------------------------------------------------------------------
+OSError                                   Traceback (most recent call last)
+Cell In[22], line 13
+     10     await session.close()
+     12 # Run the async function
+---> 13 await main()
+
+Cell In[22], line 7, in main()
+      5 session = AsyncHTMLSession()
+      6 r = await session.get(url)
+----> 7 await r.html.arender(timeout=20)
+      8 print(r.status_code)
+      9 print(r.html.text[:1000])
+
+File c:\Users\ashish.br.jain\Downloads\Cupboard\ws\pvt_venv\Lib\site-packages\requests_html.py:615, in HTML.arender(self, retries, script, wait, scrolldown, sleep, reload, timeout, keep_page)
+    612 async def arender(self, retries: int = 8, script: str = None, wait: float = 0.2, scrolldown=False, sleep: int = 0, reload: bool = True, timeout: Union[float, int] = 8.0, keep_page: bool = False):
+    613     """ Async version of render. Takes same parameters. """
+--> 615     self.browser = await self.session.browser
+    616     content = None
+    618     # Automatically set Reload to False, if example URL is being used.
+
+File c:\Users\ashish.br.jain\Downloads\Cupboard\ws\pvt_venv\Lib\site-packages\requests_html.py:714, in BaseSession.browser(self)
+    711 @property
+    712 async def browser(self):
+    713     if not hasattr(self, "_browser"):
+--> 714         self._browser = await pyppeteer.launch(ignoreHTTPSErrors=not(self.verify), headless=True, args=self.__browser_args)
+    716     return self._browser
+
+File c:\Users\ashish.br.jain\Downloads\Cupboard\ws\pvt_venv\Lib\site-packages\pyppeteer\launcher.py:307, in launch(options, **kwargs)
+    239 async def launch(options: dict = None, **kwargs: Any) -> Browser:
+    240     """Start chrome process and return :class:`~pyppeteer.browser.Browser`.
+    241     This function is a shortcut to :meth:`Launcher(options, **kwargs).launch`.
+    242     Available options are:
+   (...)    305         option with extreme caution.
+    306     """
+--> 307     return await Launcher(options, **kwargs).launch()
+
+File c:\Users\ashish.br.jain\Downloads\Cupboard\ws\pvt_venv\Lib\site-packages\pyppeteer\launcher.py:120, in Launcher.__init__(self, options, **kwargs)
+    118 if not self.chromeExecutable:
+    119     if not check_chromium():
+--> 120         download_chromium()
+    121     self.chromeExecutable = str(chromium_executable())
+    123 self.cmd = [self.chromeExecutable] + self.chromeArguments
+
+File c:\Users\ashish.br.jain\Downloads\Cupboard\ws\pvt_venv\Lib\site-packages\pyppeteer\chromium_downloader.py:138, in download_chromium()
+    136 def download_chromium() -> None:
+    137     """Download and extract chromium."""
+--> 138     extract_zip(download_zip(get_url()), DOWNLOADS_FOLDER / REVISION)
+
+File c:\Users\ashish.br.jain\Downloads\Cupboard\ws\pvt_venv\Lib\site-packages\pyppeteer\chromium_downloader.py:82, in download_zip(url)
+     80 r = http.request('GET', url, preload_content=False)
+     81 if r.status >= 400:
+---> 82     raise OSError(f'Chromium downloadable not found at {url}: ' f'Received {r.data.decode()}.\n')
+     84 # 10 * 1024
+     85 _data = BytesIO()
+
+OSError: Chromium downloadable not found at https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/1181205/chrome-win.zip: Received <?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Details>No such object: chromium-browser-snapshots/Win_x64/1181205/chrome-win.zip</Details></Error>.
+</pre>
