@@ -1,2 +1,2 @@
-# generative_ai_workspace_2024_04_05
+# Public Repo of: generative_ai_workspace_2024_04_05
 Generative AI Workspace
