@@ -1,0 +1,42 @@
+# WEBAPP
+
+- Flask: Popular, lightweight and excellent demos and POCs
+- ReactJS: Popular, embeddable in HTML itself, good for demos and POCs
+
+## ALTERNATIVES FOR WEBAPP
+
+- FastAPI, Azure Functions
+- jQuery
+
+# EMBEDDING MODEL
+
+Metric	               Value
+Parameters	           ~560 million
+Embedding dimension	   1024 (each chunk becomes a 1024‑dimensional vector)
+Disk size	           ~1.2 GB (for the safetensors weights + config files)
+RAM/VRAM @ inference   ~2–3 GB (depending on batch size and framework)
+Context window	       8192 tokens (fits paragraphs or even small sections)
+
+Seemed perfect to kickstart project and set a baseline.
+
+## ALTERNATIVE EMBEDDING MODEL
+
+*Alibaba-NLP/gte-Qwen2-7B-instruct*
+- Context length up to 32,768 tokens – great for full-page or multi-page chunks.
+- Very high quality, but requires a GPU (7B parameters).
+- Only needed if you must embed very large chunks without splitting.
+
+# VECTOR DB
+
+SQLite-Vector
+- No setup / installation required
+- Very easy to use with an SQL-like interface
+
+## ALTERNATIVE VECTOR DB
+
+- FAISS
+
+# CODING LANGUAGE AND PACKAGES
+
+- Coding Language: Python
+- Packages: HuggingFace Transformers, Sentence Transformers

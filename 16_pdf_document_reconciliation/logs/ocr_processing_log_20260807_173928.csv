@@ -1,0 +1,5 @@
+SNO,FILENAME,PAGES,TIME_TAKEN_SEC,CHARS_EXTRACTED,OUTPUT_FILE
+1,input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf,5,16.3236,12186,20982 Esec Forte SCTASK7649659_Amendment Agreement (2).txt
+2,input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf,5,16.1601,12171,20982 Esec Forte SCTASK7649659_Amendment Agreement.txt
+3,input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf,5,53.0088,55528,ALD Automotive AG_MSA (2).txt
+4,input/20260807_1735/AI Contract test/ALD Automotive AG_MSA.pdf,6,72.6765,52302,ALD Automotive AG_MSA.txt

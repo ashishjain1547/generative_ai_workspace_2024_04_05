@@ -1,0 +1,866 @@
+{
+  "doc_names": [
+    "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+    "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+    "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+    "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+    "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+    "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA.pdf",
+    "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+    "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+    "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+    "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+    "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+    "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+    "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+    "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+    "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+    "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA.pdf",
+    "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+    "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+    "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+    "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf"
+  ],
+  "top_matches": {
+    "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.696244
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.691849
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.69058
+      }
+    ],
+    "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.686972
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.685274
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.683705
+      }
+    ],
+    "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.995881
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.95268
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.951591
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.696244
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.696244
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.686972
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.686972
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.665528
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.665528
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.665181
+      }
+    ],
+    "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.995881
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.957672
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.956173
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.688093
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.688093
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.679587
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.679587
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.660932
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.652083
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.652083
+      }
+    ],
+    "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA (2).pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.905997
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA.pdf",
+        "score": 0.902691
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA.pdf",
+        "score": 0.892626
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.645144
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.644
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.643393
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.63892
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.612329
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.612329
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.609178
+      }
+    ],
+    "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA.pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA.pdf",
+        "score": 0.959674
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.935626
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.902691
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.634163
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.631058
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.6304
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.629388
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.608861
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.608861
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.605358
+      }
+    ],
+    "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.647028
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.64626
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.642846
+      }
+    ],
+    "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.663665
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.663665
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.662974
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.662974
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.643489
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.642991
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.640885
+      }
+    ],
+    "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.665181
+      }
+    ],
+    "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.665528
+      }
+    ],
+    "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.696244
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.691849
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.69058
+      }
+    ],
+    "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.990511
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.686972
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.685274
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.683705
+      }
+    ],
+    "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.99627
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.956173
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.951591
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.691849
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.691849
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.685274
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.685274
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.659903
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.64626
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.64626
+      }
+    ],
+    "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf": [
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.99627
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.957672
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.95268
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.69058
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.69058
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.683705
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.683705
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.660244
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.647028
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.647028
+      }
+    ],
+    "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA.pdf",
+        "score": 0.935626
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA.pdf",
+        "score": 0.929958
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.905997
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.660932
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.660244
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.659903
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.657626
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.635044
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.635044
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.632078
+      }
+    ],
+    "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA.pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA.pdf",
+        "score": 0.959674
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.929958
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/ALD Automotive AG_MSA (2).pdf",
+        "score": 0.892626
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.635863
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.633479
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.633443
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.633022
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.602821
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.602821
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.602103
+      }
+    ],
+    "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.647028
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.64626
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.642846
+      }
+    ],
+    "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW.pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.984423
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.663665
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.663665
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.662974
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.662974
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.643489
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.642991
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement.pdf",
+        "score": 0.640885
+      }
+    ],
+    "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.759751
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.757385
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.666073
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.665181
+      }
+    ],
+    "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf": [
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2027) (002).pdf",
+        "score": 1.0
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/REVISTO_NDA Publicis Groupe Holdings B.V._(2026) (002).pdf",
+        "score": 0.992441
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS.pdf",
+        "score": 0.754947
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/011549 Ramco Publicis_Ramco Pte Ltd_Master Services Agreement _18th Nov_RS (2).pdf",
+        "score": 0.753136
+      },
+      {
+        "document": "input/20260807_1735/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/AUTODATA SOLUTIONS INC_SOW (2).pdf",
+        "score": 0.667919
+      },
+      {
+        "document": "input/20260806_1100/AI Contract test/20982 Esec Forte SCTASK7649659_Amendment Agreement (2).pdf",
+        "score": 0.665528
+      }
+    ]
+  }
+}
